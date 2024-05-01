@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  border: 3px solid black;
+  padding: 1rem 5rem 1rem 5rem;
+
+  & .counter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    & .num {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  }
+
+  & .reset {
+    align-self: center;
+  }
+}
